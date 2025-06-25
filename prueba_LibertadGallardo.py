@@ -1,5 +1,5 @@
 
-
+#Prueba python4
 # Acá acordamos el stock de entradas para la funcion de "CATS" para el día Viernes y Sábado respectivamente 
 stock_func1 = 150
 stock_func2 = 180
