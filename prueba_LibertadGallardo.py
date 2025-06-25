@@ -28,7 +28,7 @@ def comprar_entrada(nombre, funcion): # Acá definimos una función con el nombr
 def cambiar_funcion(nombre):
     global stock_func1, stock_func2
 
-# Acá verifica si el nombre se encuentra en la variable compradores para así cambiar la función si es así. Si existe podrá cambiar la función sino, arrojará Error. El comprador no existe
+# Acá verifica si el nombre se encuentra en la variable compradores para así cambiar la función si es así. Si existe podrá cambiar la función sino, arrojará Error. El comprador no existe.
     if nombre in compradores:
         print(f"Actualmente estás registrado en: {compradores[nombre]}.")
         cambio = input("¿Deseas cambiar de función? (sí/no): ").lower() # Aca convertimos lo ingresado a lower para que el programa no malinterprete
@@ -53,14 +53,15 @@ def cambiar_funcion(nombre):
 
 # Creamos el bloque de código para la opción 3
 def mostrar_totales():
-    total_dispo = stock_func1 + stock_func2
-    total_vendidas = (150 - stock_func1) + (180 - stock_func2)
+    total_dispo = stock_func1 + stock_func2  # Sumamos las entradas de la función 1 con las de la función 2 para así tener el total disponible
+    total_vendidas = (150 - stock_func1) + (180 - stock_func2) # Acá calculamos para obtener el total de entradas vendidas
     print(f"Entradas disponibles: {total_dispo}")
     print(f"Entradas vendidas: {total_vendidas}")
 
 # Bucle principal
-def menu():
-    while True:
+def menu():  # Acá definimos menu para volver a volver a reutilizar esta parte de código
+    
+    while True:   # Acá crearemos un While True para crear un bucle infinito, el cual solo se romperá con break, el cual estará después de la opcion 4
         print("/n--- Cartelera teatro CafeConLeche y sus distintos musicales.---")
         print("1. Comprar entrada")
         print("2. Cambio de función")
@@ -87,6 +88,6 @@ def menu():
         else:
             print("Debe ingresar una opción válida!!")
 
-menu()
+menu()   # Para ejercutar la función definida antes
 
 
