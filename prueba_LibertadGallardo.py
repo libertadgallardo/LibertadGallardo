@@ -88,6 +88,6 @@ def menu():  # Acá definimos menu para volver a volver a reutilizar esta parte 
         else:
             print("Debe ingresar una opción válida!!")
 
-menu()   # Para ejercutar la función definida antes
+menu()   # Para llamar la función definida antes
 
 
